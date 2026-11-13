@@ -1,0 +1,128 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #74859555;
+    color: #091e31;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* The Main Workout Generator */
+
+.workout-generator {
+    min-height: 100vh;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section {
+   text-align: center; 
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.generator-intro {
+    color: #6d7471;
+    line-height: 1.5;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.generate-btn {
+    width: 100%;
+    background-color: #2c6faca4;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    color: #eceff3f9;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Workout Card */ 
+.workout-card {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.workout-label {
+    color: #2c6eacdf;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.workout-name {
+    font-size: 32px;
+    margin-bottom: 0.7rem;
+}
+
+.workout-description {
+    color: #6d7471;
+    line-height: 1.6;
+}
+
+/* Exercise List */
+.exercise-list {
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.exercise-item {
+    padding: 1.3rem;
+    border-bottom: 1px solid #dedede;
+    font-weight: 600;
+}
+
+.exercise-item:last-child {
+    border-bottom: none;
+}
+
+/* Media Queries */
+/* Make the heading small on smaller device */
+@media screen and (max-width: 767px) {
+    .heading {
+    font-size: 32px;
+    }
+
+    .workout-card {
+        padding: 1.5rem;
+    }
+
+    .workout-name {
+        font-size: 24px;
+    }
+
+    .exercise-item {
+        padding: 1.1rem;
+        font-size: 14px;
+    }
+}

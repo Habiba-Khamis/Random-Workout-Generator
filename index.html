@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="workout-generator">
+        <!--A main container div to bring everything inside-->
+        <div class="container"> 
+            <section class="header-section">
+                <h1 class="heading">Random Workout Generator</h1>
+
+                <p class="generator-intro">Not sure what to train today? Generate a complete workout and get moving</p>
+
+                <button id="generate-btn" class="generate-btn" type="button">Generate Workout</button>
+            </section>
+
+
+            <section class="workout-card">
+                <h5 class="workout-label">YOUR WORKOUT</h5>
+                <h2 id="workout-name" class="workout-name"></h2>
+
+                <p id="workout-description" class="workout-description"></p>
+
+                <ul id="exercise-list" class="exercise-list">
+                    
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
