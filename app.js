@@ -66,8 +66,9 @@ function generateWorkout() {
     const randomWorkout = workouts[randomIndex];
 
     // Select the name and the description of the workout and change it inside the html document
-    document.getElementById("workout-name").innerText = randomWorkout.name;
-    document.getElementById("workout-description").innerText = randomWorkout.description;
+    workoutName.innerText = randomWorkout.name;
+    workoutDescription.innerText = randomWorkout.description;
+    exerciseList.innerText = "";
 
     // Then we need to iterate over the exercises array to fill the list 
     for (i=0; i<randomWorkout.exercises.length; i++) {
